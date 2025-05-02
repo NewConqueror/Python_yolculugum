@@ -1,0 +1,119 @@
+<!--<h1> index.html sayfası</h1> -->
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+</head>
+<body>
+    <h1> index.html sayfası</h1>
+</body>
+</html>
+-->
+<!-- ikisinde de tamamen aynı içerik var sadece body kısmında h1 etiketleri değişti
+    amele gibi böyle yapmaktansa aynı iskeleti bir yerden alsam sadece değiştirilen kısımları
+    index.html about.html içine yazsam layout kullanmış olsam müq olmaz mı olur
+-->
+
+
+
+
+{% extends 'layout.html' %}
+<!-- bana layout.html deki bütün içeriği getir ancak ben layout ta tanımlamış olduğum
+    block content in içine sadece değiştirilebilir alanları eklicem demiş oluyorsun-->
+{% load static %} <!-- bunu bootstrap dersinde ekledik 26.6 extend in altına eklemek lazımmış yoksa hata veriyor-->
+
+ 
+
+
+{% block content %}
+<!-- jumbotron ile giriş kısmında bir yer oluşturduk-->
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">jumbotron başlık</h1>
+        <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, praesentium. Ea, eum nobis sunt consequatur repellat error! Quia doloremque a dolorum vero, eaque impedit nemo et adipisci nam aliquid nulla.</p>
+    </div>
+</div>
+    
+    <div class="row">
+        <div class="col-md-12">
+<!-- satırlar sütunlar ve cardlar ekledik yazı foto vs düzgün bir şekile soktuk-->
+            <div class="card mb-3">
+                <div class="row">
+                    <div class="col-md-3">
+                        
+                        <img class="card-img" src="{% static 'img/doctor who.jpg'%}" alt="">
+                        <!-- <img src="{% static 'img/1.jpg' %}" alt=""> static klasörünün altında 
+                            img klasörünün altında 1.jpg dosyası var
+                            ben gerek duymadım eklemeye ama ihtiyaç duyarsan böyle yapılıyor
+                        -->
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <div class="card-title"> doctor WHO?</div>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, tempore!
+                            </p>
+                            <p class="card-text">
+                                <small class="text-muted"> 3 gün önce</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3">
+                <div class="row">
+                    <div class="col-md-3">
+                        
+                        <img class="card-img" src="{% static 'img/github.com-homepage.png'%}" alt="">
+                        <!-- <img src="{% static 'img/1.jpg' %}" alt=""> static klasörünün altında 
+                            img klasörünün altında 1.jpg dosyası var
+                            ben gerek duymadım eklemeye ama ihtiyaç duyarsan böyle yapılıyor
+                        -->
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <div class="card-title"> doctor WHO?</div>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, tempore!
+                            </p>
+                            <p class="card-text">
+                                <small class="text-muted"> 3 gün önce</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3">
+                <div class="row">
+                    <div class="col-md-3">
+                        
+                        <img class="card-img" src="{% static 'img/github-sadikturan.png'%}" alt="">
+                        <!-- <img src="{% static 'img/1.jpg' %}" alt=""> static klasörünün altında 
+                            img klasörünün altında 1.jpg dosyası var
+                            ben gerek duymadım eklemeye ama ihtiyaç duyarsan böyle yapılıyor
+                        -->
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <div class="card-title"> doctor WHO?</div>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, tempore!
+                            </p>
+                            <p class="card-text">
+                                <small class="text-muted"> 3 gün önce</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+{% endblock %}

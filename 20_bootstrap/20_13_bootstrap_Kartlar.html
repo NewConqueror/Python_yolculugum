@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" 
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+    crossorigin="anonymous">
+    <title>Bootstrap Kartlar</title>
+
+</head>
+<body class="w-75 mx-auto my-5">
+    
+
+    <div class="card"> <!-- bir kart yapısı oluşturduk ve bodysini oluşturduk-->
+
+        <div class="card-body">
+            Lorem ipsum dolor sit amet.
+        </div>
+
+    </div>
+    <br><br>
+
+    <div class="card my-3 bg-warning text-white"> <!-- yeni kartın arka planını sarı yazıları beyaz yaptık -->
+
+        <div class="card-body">
+            Lorem ipsum dolor sit amet.
+        </div>
+
+    </div>
+    <br><br>
+
+    <div class="card my-3 bg-primary text-white"> <!-- üsttekinin mavi versiyonu -->
+
+        <div class="card-body">
+            Lorem ipsum dolor sit amet.
+        </div>
+
+    </div>
+    <br><br>
+
+    <div class="card my-3 w-50">
+
+        <div class="card-body">
+           <!-- kart a başlık ekledik h5 title ile yazı ekledik p ile ve buton ekledik button ile-->
+            <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+            <p class="card-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum saepe, distinctio fuga quia perspiciatis fugit dignissimos vero cumque voluptas doloribus? Deserunt iusto neque veniam animi. Sunt voluptatem ut quam perferendis.</p>   
+            <button class="btn btn-danger"> buton </button>
+
+        </div>
+
+    </div>
+
+    <br><br>
+
+    <div class="card my-3"> <!-- başlık yazı ekledik ama bu sefer ekstradan footer koyduk-->
+
+        <div class="card-header text-dark"> başlık</div>
+        <div class="card-body text-dark">
+            Lorem ipsum dolor sit amet.
+        </div>
+        <div class="card-footer text-dark"> footer</div>
+    </div>
+
+
+    <div class="card my-3">
+
+        <div class="card-header text-dark"> başlık</div>
+        <div class="card-body text-dark">
+        <!-- kart yapısı içinde bir liste oluşturduk satır çizgi ile bölünmüş ama kesik boşluk falan var garip yani-->
+            <ul class="list-group list-group-flush">
+ 
+                <li class="list-group-item">Lorem, ipsum dolor.</li>
+                <li class="list-group-item">Lorem, ipsum dolor.</li>
+                <li class="list-group-item">Lorem, ipsum dolor.</li>    
+
+            </ul>
+
+        </div>
+        
+    </div>
+
+    <div class="card my-3">
+
+        <div class="card-header text-dark"> başlık</div>
+        
+            <!-- card body i kaldırdık kesik çizgiler falan gitti daha güzel oldu-->
+            <ul class="list-group list-group-flush">
+ 
+                <li class="list-group-item">Lorem, ipsum dolor.</li>
+                <li class="list-group-item">Lorem, ipsum dolor.</li>
+                <li class="list-group-item">Lorem, ipsum dolor.</li>    
+
+            </ul>
+
+        
+        
+    </div>
+
+
+    <div class="card my-3"><!-- başlık içerik başlığı içerik buton sonda da footer-->
+
+        <div class="card-header text-dark"> başlık</div>
+        <div class="card-body text-dark">
+            
+            <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+            <p class="card-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum saepe, distinctio fuga quia perspiciatis fugit dignissimos vero cumque voluptas doloribus? Deserunt iusto neque veniam animi. Sunt voluptatem ut quam perferendis.</p>   
+            <button class="btn btn-danger"> buton </button>
+            <div class="card-footer text-dark"> 3 gün önce paylaşıldı</div>
+
+        </div>
+        
+    </div>
+
+    <div class="card my-3 text-center"><!-- üsttekinin aynısı ama yazılar merkezde-->
+
+        <div class="card-header text-dark"> başlık</div>
+        <div class="card-body text-dark">
+            
+            <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+            <p class="card-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum saepe, distinctio fuga quia perspiciatis fugit dignissimos vero cumque voluptas doloribus? Deserunt iusto neque veniam animi. Sunt voluptatem ut quam perferendis.</p>   
+            <button class="btn btn-danger"> buton </button>
+            <div class="card-footer text-dark"> 3 gün önce paylaşıldı</div>
+
+        </div>
+        
+    </div>
+
+    <div class="card my-3 text-right"><!-- üsttekinin aynısı ama yazılar merkez sağda-->
+
+        <div class="card-header text-dark"> başlık</div>
+        <div class="card-body text-dark">
+            
+            <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+            <p class="card-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum saepe, distinctio fuga quia perspiciatis fugit dignissimos vero cumque voluptas doloribus? Deserunt iusto neque veniam animi. Sunt voluptatem ut quam perferendis.</p>   
+            <button class="btn btn-danger"> buton </button>
+            <div class="card-footer text-dark"> 3 gün önce paylaşıldı</div>
+
+        </div>
+        
+    </div>
+
+
+    <div class="card my-3 w-50">
+    <!-- kart ın üst tarafına resim ekledik altında da başlık yazılar ve link
+    yani bir profil kart ı oluşturduk anlayacağın-->
+
+        <img src="doctor who.jpg" class="card-img-top" alt="">
+
+        <div class="card-body">
+
+            <h4 class="card-title"> fatih yeni </h4>
+            <p class="card-text"> Lorem, ipsum dolor.</p>
+            <a href="" class="card-link"> profile git</a>
+
+        </div>
+    </div>
+
+    <div class="card my-3 w-50"><!-- üsttekinin aynısı ama yazılar resim üstünde-->
+
+        <img src="doctor who.jpg" class="card-img-top" alt="">
+
+        <div class="card-img-overlay ">
+
+            <h4 class="card-title text-white"> fatih yeni </h4>
+            <p class="card-text text-white"> Lorem, ipsum dolor.</p>
+            <a href="" class="card-link"> profile git</a>
+
+        </div>
+    </div>
+
+
+    <div class="card-columns my-3">
+        <!--farklı boyutlarda kartlar oluşturduk büyüyüp küçülmeye göre kendisini ayarlar karışık rastgele gelsin
+        bazı resimler büyük bazıları küçük olsun ama düzgün dursun diyorsan bunu kullan
+        masonry - layout deniyor buna -->
+
+        <div class="card bg-primary text-white " style="height: 150px;">
+
+            <div class="card-body">
+                Lorem ipsum dolor sit amet.
+            </div>
+
+        </div>
+
+        <div class="card bg-danger text-white" style="height: 100px;">
+
+            <div class="card-body">
+                Lorem ipsum dolor sit amet.
+            </div>
+
+        </div>
+
+        <div class="card bg-warning text-white">
+
+            <div class="card-body">
+                Lorem ipsum dolor sit amet.
+            </div>
+
+        </div>
+
+
+        <div class="card bg-primary text-white " >
+
+            <div class="card-body">
+                Lorem ipsum dolor sit amet.
+            </div>
+
+        </div>
+
+        <div class="card bg-danger text-white">
+
+            <div class="card-body">
+                Lorem ipsum dolor sit amet.
+            </div>
+
+        </div>
+
+        <div class="card bg-warning text-white">
+
+            <div class="card-body">
+                Lorem ipsum dolor sit amet.
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="card-deck">
+    <!-- farklı kartlar yazıları aynı da olsa farklı da olsa hepsi aynı yeri kaplar ister 1 cümle ister 100 -->
+        <div class="card bg-warning text-white">
+
+            <div class="card-body">
+                <p class="card-text"> Lorem ipsum dolor sit amet. </p>
+                <p class="card-text"> Lorem ipsum dolor sit amet. </p>
+                <p class="card-text"> Lorem ipsum dolor sit amet. </p>
+                <p class="card-text"> Lorem ipsum dolor sit amet. </p>
+                <p class="card-text"> Lorem ipsum dolor sit amet. </p>
+            </div>
+
+        </div>
+
+        <div class="card bg-warning text-white">
+
+            <div class="card-body">
+                <p class="card-text"> Lorem ipsum dolor sit amet. </p>
+            </div>
+        </div>
+        
+        <div class="card bg-warning text-white">
+
+            <div class="card-body">
+                <p class="card-text"> Lorem ipsum dolor sit amet. </p>
+            </div>
+        </div>
+
+        <div class="card bg-warning text-white">
+
+            <div class="card-body">
+                <p class="card-text"> Lorem ipsum dolor sit amet. </p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="card-group mt-4">
+    <!-- üstteki gibi ama bunda boşluk olmadan yan yana sıralanıyorlar-->  
+        <div class="card bg-warning text-white">
+
+            <div class="card-body">
+                <p class="card-text"> Lorem ipsum dolor sit amet. </p>
+                <p class="card-text"> Lorem ipsum dolor sit amet. </p>
+                <p class="card-text"> Lorem ipsum dolor sit amet. </p>
+                <p class="card-text"> Lorem ipsum dolor sit amet. </p>
+                <p class="card-text"> Lorem ipsum dolor sit amet. </p>
+            </div>
+
+        </div>
+
+        <div class="card bg-warning text-white">
+
+            <div class="card-body">
+                <p class="card-text"> Lorem ipsum dolor sit amet. </p>
+            </div>
+        </div>
+        
+        <div class="card bg-warning text-white">
+
+            <div class="card-body">
+                <p class="card-text"> Lorem ipsum dolor sit amet. </p>
+            </div>
+        </div>
+
+        <div class="card bg-warning text-white">
+
+            <div class="card-body">
+                <p class="card-text"> Lorem ipsum dolor sit amet. </p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+    crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" 
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
+    crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" 
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
+    crossorigin="anonymous"></script>
+
+</body>
+</html>

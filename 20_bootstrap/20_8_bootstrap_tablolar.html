@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" 
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+    crossorigin="anonymous">
+    <title>Bootstrap tablolar</title>
+
+</head>
+<body class="w-75 mx-auto my-4"> <!-- sayfanın 75 ini kaplasın sağdan soldan ortalı üstten ve alttan 4 boşluk-->
+    
+
+   <table class="table"> <!--medeniyet geldi aq satır araları belli oldu başlıklar düzeldi-->
+
+    <thead>           <!-- tablo head tablonun başlık kısmı yani sütun isimlerini verdik-->
+        <tr>          <!-- çok büyük ihtimalle satırı temsil ediyor hepsi bir satır içinde çünkü-->
+        <th>#</th>    <!-- sütun isimlerinin her biri ayrı th de olmalı ve tr içinde olmalı-->
+        <th>ad</th>
+        <th>soyad</th>
+        <th>email</th>
+        </tr>
+    </thead>
+
+    <tbody>  <!-- tablonun içerik kısmı -->
+        <tr> <!-- yine hepsi bir satırda olsun dedik -->
+            <td>1</td>             <!-- sırasıyla sütunları doldurduk 1.sütun -->
+            <td>fatih</td>         <!-- sırasıyla sütunları doldurduk 2.sütun --> 
+            <td>yeni</td>          <!-- sırasıyla sütunları doldurduk 3.sütun -->  
+            <td>abc@gmail.com</td> <!-- sırasıyla sütunları doldurduk 4.sütun -->
+        </tr>
+
+        <tr> <!-- 2.satır kalanlar üstle aynı aşağı doğru 3.satır 4.satır vs -->
+            <td>2</td>  
+            <td>cemre</td>
+            <td>yeni</td>
+            <td>abc@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>3</td>  
+            <td>saliha</td>
+            <td>yeni</td>
+            <td>abc@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>4</td>  
+            <td>halime</td>
+            <td>yeni</td>
+            <td>abc@gmail.com</td>
+        </tr>
+
+    </tbody>
+
+   </table>
+
+   <br><br>
+
+   <table class="table table-dark"> <!-- tabloyu komple siyaha boyadık-->
+
+    <thead> <!-- yukarıdaki tablonun kopyası zaten aynı şeyler siyah olması dışında-->
+        <tr>
+        <th>#</th>
+        <th>ad</th>
+        <th>soyad</th>
+        <th>email</th>
+        </tr>
+    </thead>
+
+    <tbody> 
+        <tr>
+            <td>1</td>  
+            <td>fatih</td>
+            <td>yeni</td>
+            <td>abc@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>2</td>  
+            <td>cemre</td>
+            <td>yeni</td>
+            <td>abc@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>3</td>  
+            <td>saliha</td>
+            <td>yeni</td>
+            <td>abc@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>4</td>  
+            <td>halime</td>
+            <td>yeni</td>
+            <td>abc@gmail.com</td>
+        </tr>
+
+    </tbody>
+
+   </table>
+
+   <br><br>
+
+   <table class="table">
+    <thead class="table-dark">  <!-- sadece bunun içindekileri siyah yaptık başlık kısımlarını yani -->
+        <tr>
+        <th>#</th>
+        <th>ad</th>
+        <th>soyad</th>
+        <th>email</th>
+        </tr>
+    </thead>
+
+    <tbody> 
+        <tr>
+            <td>1</td>  
+            <td>fatih</td>
+            <td>yeni</td>
+            <td>abc@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>2</td>  
+            <td>cemre</td>
+            <td>yeni</td>
+            <td>abc@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>3</td>  
+            <td>saliha</td>
+            <td>yeni</td>
+            <td>abc@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>4</td>  
+            <td>halime</td>
+            <td>yeni</td>
+            <td>abc@gmail.com</td>
+        </tr>
+
+    </tbody>
+
+   </table>
+
+   <br><br>
+
+   <table class="table">
+    <thead class="table-light"> <!-- başlıkları daha farklı tonda yaptık o kadar -->
+        <tr>
+        <th>#</th>
+        <th>ad</th>
+        <th>soyad</th>
+        <th>email</th>
+        </tr>
+    </thead>
+
+    <tbody> 
+        <tr>
+            <td>1</td>  
+            <td>fatih</td>
+            <td>yeni</td>
+            <td>abc@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>2</td>  
+            <td>cemre</td>
+            <td>yeni</td>
+            <td>abc@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>3</td>  
+            <td>saliha</td>
+            <td>yeni</td>
+            <td>abc@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>4</td>  
+            <td>halime</td>
+            <td>yeni</td>
+            <td>abc@gmail.com</td>
+        </tr>
+
+    </tbody>
+
+   </table>
+
+   <br><br>
+
+   <table class="table table-dark table-striped"> <!-- satırlar sırasıyla farklı renkte daha açık koyu vs -->
+    <thead>
+        <tr>
+        <th>#</th>
+        <th>ad</th>
+        <th>soyad</th>
+        <th>email</th>
+        </tr>
+    </thead>
+
+    <tbody> 
+        <tr>
+            <td>1</td>  
+            <td>fatih</td>
+            <td>yeni</td>
+            <td>abc@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>2</td>  
+            <td>cemre</td>
+            <td>yeni</td>
+            <td>abc@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>3</td>  
+            <td>saliha</td>
+            <td>yeni</td>
+            <td>abc@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>4</td>  
+            <td>halime</td>
+            <td>yeni</td>
+            <td>abc@gmail.com</td>
+        </tr>
+
+    </tbody>
+
+   </table>
+
+   <br><br>
+
+   <table class="table table-striped table-bordered"> <!-- sütunları kenarlık ile böler -->
+    <thead>
+        <tr>
+        <th>#</th>
+        <th>ad</th>
+        <th>soyad</th>
+        <th>email</th>
+        </tr>
+    </thead>
+
+    <tbody> 
+        <tr>
+            <td>1</td>  
+            <td>fatih</td>
+            <td>yeni</td>
+            <td>abc@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>2</td>  
+            <td>cemre</td>
+            <td>yeni</td>
+            <td>abc@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>3</td>  
+            <td>saliha</td>
+            <td>yeni</td>
+            <td>abc@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>4</td>  
+            <td>halime</td>
+            <td>yeni</td>
+            <td>abc@gmail.com</td>
+        </tr>
+
+    </tbody>
+
+   </table>
+
+   <br><br>
+
+
+   <table class="table table-hover"> <!-- tablo üzerinde gezinebilir olur üzerine geldiğimizde daha koyu olur -->
+    <thead>
+        <tr>
+        <th>#</th>
+        <th>ad</th>
+        <th>soyad</th>
+        <th>email</th>
+        </tr>
+    </thead>
+
+    <tbody> 
+        <tr>
+            <td>1</td>  
+            <td>fatih</td>
+            <td>yeni</td>
+            <td>abc@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>2</td>  
+            <td>cemre</td>
+            <td>yeni</td>
+            <td>abc@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>3</td>  
+            <td>saliha</td>
+            <td>yeni</td>
+            <td>abc@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>4</td>  
+            <td>halime</td>
+            <td>yeni</td>
+            <td>abc@gmail.com</td>
+        </tr>
+
+    </tbody>
+
+   </table>
+
+   <br><br>
+
+
+   <table class="table table-sm"> <!-- tablo daha küçük olur -->
+    <thead>
+        <tr>
+        <th>#</th>
+        <th>ad</th>
+        <th>soyad</th>
+        <th>email</th>
+        </tr>
+    </thead>
+
+    <tbody> 
+        <tr>
+            <td>1</td>  
+            <td>fatih</td>
+            <td>yeni</td>
+            <td>abc@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>2</td>  
+            <td>cemre</td>
+            <td>yeni</td>
+            <td>abc@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>3</td>  
+            <td>saliha</td>
+            <td>yeni</td>
+            <td>abc@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>4</td>  
+            <td>halime</td>
+            <td>yeni</td>
+            <td>abc@gmail.com</td>
+        </tr>
+
+    </tbody>
+
+   </table>
+
+   <br><br>
+
+
+   <table class="table">
+    <thead>
+        <tr>
+        <th>#</th>
+        <th>ad</th>
+        <th>soyad</th>
+        <th>email</th>
+        </tr>
+    </thead>
+
+    <tbody> 
+        <tr class="table-primary"> <!-- tr satır demekti bu satırı mavi yaptık -->
+            <td>1</td>  
+            <td>fatih</td>
+            <td>yeni</td>
+            <td>abc@gmail.com</td>
+        </tr>
+
+        <tr class="table-danger"> <!--bu satırı kırmızı yaptık -->
+            <td>2</td>  
+            <td>cemre</td>
+            <td>yeni</td>
+            <td class="bg-dark text-white" >abc@gmail.com</td>
+             <!-- email kısmının arka planını siyah yazılarını ise beyaz yaptık -->
+        </tr>
+
+        <tr>
+            <td>3</td>  
+            <td class="table-success">saliha</td> <!-- satırda ad kısmını salihayı yeşil yaptık-->
+            <td>yeni</td>
+            <td>abc@gmail.com</td>
+        </tr>
+
+        <tr class="bg-secondary"> <!-- tüm satırın arka planını gri yaptık -->
+            <td>4</td>  
+            <td>halime</td>
+            <td class="bg-warning">yeni</td> <!-- soyad kısmının arka planını sarı yaptık -->
+            <td>abc@gmail.com</td>
+        </tr>
+
+    </tbody>
+
+   </table>
+
+   <br><br>
+
+
+   <div class="table-responsive"> 
+    <!-- bunu eklediğimizde eğer sayfaya sığmayacak kadar çoksa ayarlı scrool bar koymuş oluyoruz
+    .    kendisi boyunu ayarlıyor sayfa büyüyüp küçülmesine göre-->
+
+    <table class="table table-bordered"> 
+        
+        <thead>
+            <tr>
+            <th>#</th>
+            <th>ad</th>
+            <th>soyad</th>
+            <th>email</th>
+            <th>#</th>
+            <th>ad</th>
+            <th>soyad</th>
+            <th>email</th>
+            <th>#</th>
+            <th>ad</th>
+            <th>soyad</th>
+            <th>email</th>
+            <th>#</th>
+            <th>ad</th>
+            <th>soyad</th>
+            <th>email</th>
+            <th>#</th>
+            <th>ad</th>
+            <th>soyad</th>
+            <th>email</th>
+            </tr>
+        </thead>
+    
+        <tbody> 
+            <tr>
+                <td>1</td>  
+                <td>fatih</td>
+                <td>yeni</td>
+                <td>abc@gmail.com</td>
+                <td>1</td>  
+                <td>fatih</td>
+                <td>yeni</td>
+                <td>abc@gmail.com</td>
+                <td>1</td>  
+                <td>fatih</td>
+                <td>yeni</td>
+                <td>abc@gmail.com</td>
+                <td>1</td>  
+                <td>fatih</td>
+                <td>yeni</td>
+                <td>abc@gmail.com</td>
+                <td>1</td>  
+                <td>fatih</td>
+                <td>yeni</td>
+                <td>abc@gmail.com</td>
+            </tr>
+    
+            <tr>
+                <td>2</td>  
+                <td>cemre</td>
+                <td>yeni</td>
+                <td>abc@gmail.com</td>
+                <td>2</td>  
+                <td>cemre</td>
+                <td>yeni</td>
+                <td>abc@gmail.com</td>
+                <td>2</td>  
+                <td>cemre</td>
+                <td>yeni</td>
+                <td>abc@gmail.com</td>
+                <td>2</td>  
+                <td>cemre</td>
+                <td>yeni</td>
+                <td>abc@gmail.com</td>
+                <td>2</td>  
+                <td>cemre</td>
+                <td>yeni</td>
+                <td>abc@gmail.com</td>
+            </tr>
+    
+            <tr>
+                <td>3</td>  
+                <td>saliha</td>
+                <td>yeni</td>
+                <td>abc@gmail.com</td>
+                <td>3</td>  
+                <td>saliha</td>
+                <td>yeni</td>
+                <td>abc@gmail.com</td>
+                <td>3</td>  
+                <td>saliha</td>
+                <td>yeni</td>
+                <td>abc@gmail.com</td>
+                <td>3</td>  
+                <td>saliha</td>
+                <td>yeni</td>
+                <td>abc@gmail.com</td>
+                <td>3</td>  
+                <td>saliha</td>
+                <td>yeni</td>
+                <td>abc@gmail.com</td>
+            </tr>
+    
+            <tr>
+                <td>4</td>  
+                <td>halime</td>
+                <td>yeni</td>
+                <td>abc@gmail.com</td>
+                <td>4</td>  
+                <td>halime</td>
+                <td>yeni</td>
+                <td>abc@gmail.com</td>
+                <td>4</td>  
+                <td>halime</td>
+                <td>yeni</td>
+                <td>abc@gmail.com</td>
+                <td>4</td>  
+                <td>halime</td>
+                <td>yeni</td>
+                <td>abc@gmail.com</td>
+                <td>4</td>  
+                <td>halime</td>
+                <td>yeni</td>
+                <td>abc@gmail.com</td>
+            </tr>
+    
+        </tbody>
+    
+       </table>
+    
+       <br><br>
+    
+
+
+
+
+
+
+
+   </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+    crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" 
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
+    crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" 
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
+    crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" 
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+    crossorigin="anonymous">
+    <title>Bootstrap resim ve float özelliği</title>
+
+    <style>
+        /*img {
+            width: 200px;
+        }*/
+
+        .w {
+            width: 200px; /* w class ına ship olanların genişliği 200px olsun dedik */
+        }
+    </style>
+</head>
+<body class="w-75 mx-auto my-5"> <!-- sayfayı 75 kaplasın sağdan soldan eşit yukarı aşağı 5 fark var -->
+    
+    <img src="doctor who.jpg" alt="" class="w"> <!-- normal dikdörtgen şeklinde -->
+    <img src="doctor who.jpg" alt="" class="rounded w"> <!-- kenarları yumuşatılmış dikdörtgen şeklinde -->
+    <img src="doctor who.jpg" alt="" class="rounded-circle w"> <!-- daire şeklinde -->
+    <img src="doctor who.jpg" alt="" class="img-thumbnail w"> <!-- çerçeve eklenmiş şeklide olur -->
+    <br><br>
+    <img src="doctor who.jpg" alt="" >
+     <!-- w ye uymaz 200px değil 75 kaplıyor sayfa küçüldüğü zaman foto da küçülmez aynı kalır  -->
+    <br><br>
+    <img src="doctor who.jpg" alt="" class="img-fluid">
+    <!-- bu da w ye uymaz 200 px değil 75 kaplar AMA bu sayfa küçüldüğü zaman kendini küçültür
+         sayfa büyütüldüğü zaman kendini büyültür ama normal boyutunu yani 75 i aşamaz max kendi boyutu olur yani -->
+    <br><br>
+
+    <img src="doctor who.jpg" alt="" class="w d-block mx-auto" >
+    <!-- img ler inline dır inline ları direkt ortalayamıyoruz o yüzden bir blok etiketi içerisine aldık -->
+    <img src="doctor who.jpg" alt="" class="w float-left"> <!-- yeri sol olsun dedik -->
+    <img src="doctor who.jpg" alt="" class="w float-right"><!-- yeri sağ olsun dedik -->
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur harum nesciunt repellendus ullam itaque optio repellat! Deleniti fuga ipsa id at sed cum. Facilis corrupti minima esse culpa. Inventore, accusamus.</p>
+    <!-- yazılar iki resimin arasına geldi ben böyle olsun istemiyorum aga napıcam clear fix -->
+    <br><br>
+    
+    <img src="doctor who.jpg" alt="" class="w d-block mx-auto" >
+   
+    <div class="clearfix"> 
+    <img src="doctor who.jpg" alt="" class="w float-left">
+    <img src="doctor who.jpg" alt="" class="w float-right">
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur harum nesciunt repellendus ullam itaque optio repellat! Deleniti fuga ipsa id at sed cum. Facilis corrupti minima esse culpa. Inventore, accusamus.</p>
+    
+    <!-- clearfix yaptığımız zaman daha düzenli olur yazılar artık iki resmin arasında değil altında -->
+
+    <div class="bg-primary p-3 w-25"></div> <!-- mavi çubuk 25 yer kaplasın-->
+    <div class="bg-warning p-3 w-75"></div> <!-- sarı çubuk 75 yer kaplasın-->
+    <br><br>    
+    
+    <div class="bg-primary p-3 w-25 float-left"></div>  <!-- mavi çubuk solda olsun -->
+    <div class="bg-warning p-3 w-75 float-left"></div> <!-- sarı çubuk solda olsun -->
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur harum nesciunt repellendus ullam itaque optio repellat! Deleniti fuga ipsa id at sed cum. Facilis corrupti minima esse culpa. Inventore, accusamus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur harum nesciunt repellendus ullam itaque optio repellat! Deleniti fuga ipsa id at sed cum. Facilis corrupti minima esse culpa. Inventore, accusamus.</p>
+    <br><br>
+    <div class="clearfix"></div>
+        <div class="bg-primary p-3 w-25 float-left"></div>
+        <div class="bg-warning p-3 w-75 float-right"></div> <!-- left te right ta desen aynı kapıya çıkıyor -->
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur harum nesciunt repellendus ullam itaque optio repellat! Deleniti fuga ipsa id at sed cum. Facilis corrupti minima esse culpa. Inventore, accusamus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur harum nesciunt repellendus ullam itaque optio repellat! Deleniti fuga ipsa id at sed cum. Facilis corrupti minima esse culpa. Inventore, accusamus.</p>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+    crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" 
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
+    crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" 
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
+    crossorigin="anonymous"></script>
+
+</body>
+</html>

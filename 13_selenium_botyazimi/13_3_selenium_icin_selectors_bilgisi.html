@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- id ile ulaşmak için # işaretini kullanıyoruz böylece özelliklerine erişebiliyoruz id 1 tane olmalı
+        bir id diğer bir değişkende olamaz
+         #header ile id si header olana #submit ile id si submit olana erişiriz
+         class ile ulaşmak içinse .yı kullanırız birden fazla clasa da erişebiliriz bu arada
+        .course ile class ı course olanlara erişiriz 3 tane var ama .course.Angular dersek classı course Angular
+        olana ulaşırız
+    
+        input diyerek bütün input alanları kastetmiş oluruz
+        input[type="text"] dersek sadece type ı text olanları kastetmiş oluruz 
+        input[type="password"] dersek sadece type ı password olanları kastetmiş oluruz-->
+    <style>
+        #header {       
+             font-size: 45px;
+             color: red;
+        }
+
+        .course h2 {
+            color: blue;
+        }
+
+        .course.Angular {
+            background-color: yellow;
+        }
+
+        #kullaniciadi {
+            border: 5px solid red;
+        }
+        
+        input[type="text"] {
+            padding: 50px;
+            
+        }
+
+        input[type="password"] {
+            padding: 20px;
+        }
+
+        #submit {
+            color: green;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div id="container">
+        <h1 id="header">Kurslar</h1>
+        <hr> <!--hr çizgi ekler--> 
+        <div class="course Python">
+            <h2>Python Kursu</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quis!</p>
+        </div>
+
+        <div class="course Angular">
+            <h2>Angular Kursu</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quis!</p>
+        </div>
+
+        <div class="course Javascript">
+            <h2>Javascript Kursu</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quis!</p>
+        </div>
+
+
+        <div>
+            <form>
+                kullanici adi: <input type="text" name = "kullaniciadi" id="kullaniciadi"><br> br bir satır aşağı indirir
+                parola:        <input type="password" name = "parola" id="parola"><br>
+                               <input type="submit" value="giris yap" id="submit">
+            </form>
+        </div>
+
+    </div>
+    
+</body>
+</html>

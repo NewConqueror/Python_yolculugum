@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <title></title>
+
+    <style>
+
+        .navbar {
+            opacity: 0.8;
+            border-bottom: 1px solid #fff;
+        }
+
+        .jumbotron {
+            padding-top: 100px;
+        }
+
+    </style>
+
+  </head>
+  <body>
+    
+    <!-- navigation bar oluşturduk koyu renk ve yukarıya sabitledik -->
+    <nav class="navbar navbar-dark navbar-expand-sm bg-dark fixed-top">
+        
+        <div class="container">
+
+            <a href="/" class="navbar-brand"> <!-- logo ekledik -->
+                logo
+            </a>
+
+            <!-- çok küçüldüğü zaman 3 çizgi şeklinde buton ekledik linkler onun içinde -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+
+                <ul class="navbar-nav ml-auto"> <!-- bir liste şeklinde ekledik  -->
+
+                    <li class="nav-item"> <!-- linkleri ekledik  -->
+                        <a href="#" class="nav-link active">
+                            ana sayfa
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">
+                            hakkında
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">
+                            servisler
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">
+                            iletişim
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+
+
+    <header>
+        <!-- jumbotron yani o büyük kısmı ekledik koyu arka plan beyaz yazılı  -->
+        <div class="jumbotron bg-dark text-white">
+
+            <div class="container"> <!-- düzgün gözüksün diye container içine aldık -->
+
+                <div class="col-md-6 px-0"> <!-- orta seviyede vs iken 6 ya böldük -->
+                    <h1 class="display-4 font-italic"> <!-- başlık ekledik büyük italik fontta -->
+                        herhangi bir başlık 
+                    </h1>
+
+                    <p class="lead my-3">   <!-- içerik kısmı  -->
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, vel!
+                    </p>
+
+                    <p class="lead mb-0"> <!-- son kısım  -->
+                        <a href="#" class="text-white font-weight-bold"> devamını oku</a>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class="container"> <!-- aynı gözüksün diye bu da container içinde -->
+            <div class="row">   <!-- satır oluşturduk  -->
+                <div class="col md-8"> <!-- sütunlar içinde kartlar olucak 8 i bunun -->
+
+                    <div class="card mb-4"> <!-- foto ekledik kenarları yumuşattık -->
+                        <img src="doctor who.jpg" alt="" class="card-img-top img-thumbnail">
+                        <div class="card-body">
+
+                            <h4 class="card-title"> post başlık</h4> <!-- başlık içerik va -->
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?
+                            </p>
+                            <button type="button" class="btn btn-primary"> devamını oku </button>
+                            <!-- devamını oku butonu -->
+                        </div>
+                        <div class="card-footer text-muted"> <!-- soluk renkte tarih belirten footer kısmı  -->
+                            31 temmuz 2023
+                        </div>
+                    </div>
+
+                    <div class="card mb-4"> <!-- üstün aynısı -->
+                        <img src="doctor who.jpg" alt="" class="card-img-top img-thumbnail">
+                        <div class="card-body">
+
+                            <h4 class="card-title"> post başlık</h4>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?
+                            </p>
+                            <button type="button" class="btn btn-primary"> devamını oku </button>
+                        </div>
+                        <div class="card-footer text-muted">
+                            31 temmuz 2023
+                        </div>
+                    </div>
+
+
+                    <div class="card mb-4"> <!-- üstün aynısı  -->
+                        <img src="doctor who.jpg" alt="" class="card-img-top img-thumbnail">
+                        <div class="card-body">
+
+                            <h4 class="card-title"> post başlık</h4>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?
+                            </p>
+                            <button type="button" class="btn btn-primary"> devamını oku </button>
+                        </div>
+                        <div class="card-footer text-muted">
+                            31 temmuz 2023
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col md-4"> <!-- sağ taraftaki kartları oluşturucaz -->
+
+                    <div class="card mb-4">
+
+                        <div class="card-header"> <!-- başlık kısmı -->
+                            <h5> ara </h5>
+                        </div>
+
+                        <div class="card-body"> <!-- içerik kısmı -->
+
+                            <div class="input-group"> <!-- kary ın içine input yeri ekledik default yazı koyduk -->
+                                <input type="text" class="form-control" placeholder="ara..">
+
+                                <span class="input-group-btn"><!-- aramayı sonuçlandırmak için buton koyduk -->
+                                    <button type="button" class="btn btn-secondary">
+                                        git
+                                    </button>
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="card mb-4">
+
+                        <div class="card-header"> <!-- aynı başlık -->
+                            <h5> kategoriler </h5>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="row"> <!-- yine satır ve sütun ekledik -->
+
+                                <div class="col">
+
+                                    <ul class="list-unstyled"> <!-- linkler liste şeklinde  -->
+                                        <li>
+                                            <a href="#"> web tasarım</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> html</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> angular</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                                <div class="col"> <!-- iki parçaya ayırdık alanı paylaştılar  -->
+
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#"> java script </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> Css </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> React </a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="card mb-4">
+
+                        <div class="card-header"> <!-- başlık kısmı -->
+                            <h5> widget </h5>
+                        </div>
+
+                        <div class="card-body"> <!-- içerik kısmı düz -->
+                            <p>
+                               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, aspernatur repudiandae laboriosam saepe quos commodi quia fugit earum reprehenderit. Quasi quo eveniet voluptatem veniam tenetur, assumenda quaerat ipsum laudantium adipisci? 
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </main>
+
+
+    <footer class="py-5 bg-dark text-white text-center"> <!-- footer kısmı en alta ekledik -->
+        tüm hakları saklıdır
+    </footer>
+   
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" 
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+    crossorigin="anonymous">
+    <title>Bootstrap Formlar</title>
+
+</head>
+<body class="w-75 mx-auto my-5">
+
+    <form>
+
+        <div class="form-group">
+
+            <label for="ad"> ad </label>
+            <input type="text" id="ad" class="form-control" placeholder="isim giriniz">
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="eposta"> eposta </label>
+            <input type="text" id="eposta" class="form-control" placeholder="eposta giriniz">
+            <small class="form-text text-muted"> lütfen geçerli bir eposta giriniz</small>
+        </div>
+
+        <div class="form-group">
+
+            <label for="parola"> parola </label>
+            <input type="password" id="parola" class="form-control" placeholder="parola giriniz">
+            <small class="form-text text-muted"> lütfen geçerli bir parola giriniz</small>
+        </div>
+
+        <div class="form-group">
+
+            <label for="sehir">şehir</label>
+            <select name="sehir" id="sehir" class="form-control"> <!-- name server tarafı id kullanıcı tarafı-->
+
+                <option value="0"> kocaeli</option> <!-- value= "kocaeli" istanbul ankara vs vs yazabilirz-->
+                <option value="1"> istanbul</option>
+                <option value="2"> ankara</option>
+
+
+            </select> 
+
+        </div>
+        
+        <div class="form-group">
+
+            <label for="mesaj">mesaj</label>
+            <textarea name="mesaj" id="mesaj" rows="5 " class="form-control"></textarea>
+
+        </div>
+
+        <div class="form-group">
+
+            <legend>Hobiler</legend>
+
+            <div class="form-check">
+
+                <label class="form-check-label">
+                    <input type="checkbox"> koşmak
+                </label>
+
+            </div>
+
+            <div class="form-check">
+
+                <label class="form-check-label">
+                    <input type="checkbox"> yüzmek
+                </label>
+
+            </div>
+
+            <div class="form-check">
+
+                <label class="form-check-label">
+                    <input type="checkbox"> uçmak
+                </label>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="custom-control custom-checkbox">
+
+            <input type="checkbox" class="custom-control-input" id="ch">
+            <label class="custom-control-label" for="ch">  tekli checkbox</label>
+
+        </div>
+
+        <div class="custom-control custom-radio">
+
+            <input type="radio" class="custom-control-input" id="rd">
+            <label class="custom-control-label" for="rd">  tekli radio</label>
+
+        </div>
+
+
+        <div>
+
+            <div class="custom-control custom-radio custom-control-inline">
+
+                <input type="radio" id="cr1"  name="ornek" class="custom-control-input" id="rd">
+                <label class="custom-control-label" for="cr1">  custom radio1</label>
+    
+            </div>
+
+            <div class="custom-control custom-radio custom-control-inline">
+
+                <input type="radio" id="cr2" name="ornek" class="custom-control-input" id="rd">
+                <label class="custom-control-label" for="cr2" >  custom radio2</label>
+    
+            </div>
+
+
+        </div>
+
+
+        <div class="input-group">
+
+            <input type="text" class="form-control">
+            <div class="input-group-append">
+                <span class="input-group-text" id="ig"> @gmail.com</span>
+            </div>
+
+        </div>
+
+
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="ig"> https://fatihyeni.com/</span>
+            </div>
+            <input type="text" class="form-control">
+            
+
+        </div>
+
+
+
+        <div class="clearfix">
+
+            <div class="w-50 float-left">
+
+                <div class="form-group">
+
+                    <label for="ad"> ad </label>
+                    <input type="text" id="ad" class="form-control" placeholder="isim giriniz">
+        
+                </div>
+
+            </div>
+
+            <div class="w-50 float-left">
+
+                <div class="form-group">
+
+                    <label for="soyad"> soyad </label>
+                    <input type="text" id="soyad" class="form-control" placeholder="soyisim giriniz">
+        
+                </div>
+
+            </div>
+            
+
+
+
+        <div class="clearfix">
+
+            <div class="w-50 float-left">
+
+                <div class="form-group">
+
+                    <label for="ad"> ad </label>
+                    <input type="text" id="ad" class="form-control" placeholder="isim giriniz">
+        
+                </div>
+
+            </div>
+
+            <div class="w-50 float-left">
+
+                <div class="form-group">
+
+                    <label for="soyad"> soyad </label>
+                    <input type="text" id="soyad" class="form-control" placeholder="soyisim giriniz">
+        
+                </div>
+
+            </div>
+
+
+
+        <div class="clearfix">
+
+            <div class="w-50 float-left">
+
+                <div class="form-group">
+
+                    <label for="ad"> ad </label>
+                    <input type="text" id="ad" class="form-control" placeholder="isim giriniz">
+        
+                </div>
+
+            </div>
+
+            <div class="w-50 float-left">
+
+                <div class="form-group">
+
+                    <label for="soyad"> soyad </label>
+                    <input type="text" id="soyad" class="form-control" placeholder="soyisim giriniz">
+        
+                </div>
+
+            </div>
+        
+        </div>
+
+
+
+
+    </form>
+    
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+    crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" 
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
+    crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" 
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
+    crossorigin="anonymous"></script>
+
+</body>
+</html>

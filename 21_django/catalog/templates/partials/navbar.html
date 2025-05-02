@@ -1,0 +1,48 @@
+<!-- sayfanın başlık kısmını oluşturduk bir navbar kullanarak -->
+<header>
+    <div class="navbar navbar-expand-sm bg-primary navbar-dark">
+
+        <div class="container">
+            <a href="{% url 'index' %}" class="navbar-brand"> movie app</a><!-- üstteki bar -->
+<!-- url index metoduna gidiş yapıcak o yüzden böyle yaptık-->
+            <ul class="navbar-nav mr-auto"> <!-- yerini ayarlasın dedik-->
+
+                <!-- request yolu root a eşitse home butonu aktif et-->
+                <li 
+                    {% if request.path == '/' %}
+                        class="nav-item active"
+                    {% else %}
+                         class="nav-item"
+                    {% endif %}
+                > <!-- eğer ana sayfadaysan home butonu aktif olsun dedik-->
+                    <a href="{% url 'index' %}" class="nav-link"> home</a>
+                </li>
+<!-- request yolunun içinde about varsa about u aktif et-->
+                <li 
+                    {% if 'about' in request.path %}
+                      class="nav-item active"
+                    {% else %}
+                         class="nav-item"
+                    {% endif %}>
+
+                    <a href="{% url 'about' %}" class="nav-link"> about</a>
+                </li>
+<!-- movies varsa movies i aktif et dedik-->
+                <li 
+                
+                    {% if 'movies' in request.path %}
+                      class="nav-item active"
+                    {% else %}
+                         class="nav-item"
+                    {% endif %}>
+
+                    <a href="{% url 'movies' %}" class="nav-link"> movies</a>
+                </li>
+
+                
+
+            </ul>
+        </div>
+
+    </div>
+</header>

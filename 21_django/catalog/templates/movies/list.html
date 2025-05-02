@@ -1,0 +1,62 @@
+{% extends 'layout.html' %} 
+{% load static %}
+{% block content %}
+    
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">jumbotron başlık</h1>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, praesentium. Ea, eum nobis sunt consequatur repellat error! Quia doloremque a dolorum vero, eaque impedit nemo et adipisci nam aliquid nulla.</p>
+        </div>
+    </div>
+
+<!-- yine aynı index ten kopyalayıp aynısını yapıştırdık-->
+
+
+
+    <div class="row">
+
+        <div class="col-md-12">
+
+            {% if movies %}
+                {% for movie  in movies %}
+                    <div class="card mb-3">
+                <div class="row">
+                    <div class="col-md-3">
+                        
+                        <img class="card-img" src="{% static movie.get_image_path 'img/doctor who.jpg'%}" alt="">
+                        <!-- get_image_path ile resimin yolunu alıyoruz for ile dönerken da kaç resim varsa onlar geliyor-->
+                        <!-- <img src="{% static 'img/1.jpg' %}" alt=""> static klasörünün altında 
+                            img klasörünün altında 1.jpg dosyası var
+                            ben gerek duymadım eklemeye ama ihtiyaç duyarsan böyle yapılıyor
+                        -->
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <div class="card-title"> {{movie.ad}} <!--doctor WHO? ders 26.11--></div>
+                            <!-- for dönerken movie den ad ı ekledik -->
+                            <p class="card-text">
+                               <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, tempore! 26.11-->
+                               {{movie.aciklama}}
+                               <!-- movie den aciklamayı ekledik -->
+                            </p>
+                            <p class="card-text">
+                                <small class="text-muted"> {{movie.olusturulma_tarihi}} | timesince 3 gün önce</small>
+                                <!-- timesince kaç dk vs önce eklendiğini söyler 0 1 4 saat 14 dakika vs vs gibi -->
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <div class="alert alert-warning">
+                    <p>no movies</p>
+                </div>
+            {% endif %}
+
+        </div>
+
+    </div>
+
+
+{% endblock %}

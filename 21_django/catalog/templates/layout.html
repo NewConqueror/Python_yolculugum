@@ -1,0 +1,47 @@
+<!-- 26.5 django static dosyalar-->
+
+{% load static %}
+
+<!-- her bir uygulamanın altına static dosyası eklemek yerine ana dizin altına bir stacik eklemek istersem
+    şimdi static dosyasını ana dizin altına alıcaz değişiklikler olucak bakarsın neler olduğuna
+    catalog altında olucak static ama css dosyası gözükmüyor ek bir ayar var onun yapılması gerekiyor
+    bu ayar da doküman kısmında gösteriliyor zaten
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>catalog uygulaması </title>
+    <!-- 26.5 django static dosyalar-->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <!-- bootstrap tasarımı kullancağımız css dosyalarını ekledik-->
+</head>
+<body>
+<!-- header ı footer ı aynı dosyaya yazmak yerine header ı partials altında bir dosyaya-->
+    {% include 'partials/navbar.html' %}
+
+    <main>
+
+        <div class="container mt-4">
+
+            {% block content %}
+
+            {% endblock%}
+
+        </div>
+
+    </main>
+<!-- footer ı partials altında ayrı bir dosyaya ekledik ve include ile çağırdık layout kalabalıktan kurtuldu-->
+    {% include 'partials/footer.html' %}
+    
+    
+    <!-- bootstrap tasarımı kullancağımız js dosyalarını ekledik-->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+
+</body>
+</html>

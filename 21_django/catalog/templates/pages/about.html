@@ -1,0 +1,31 @@
+<!--<h1>about.html sayfası</h1>-->
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+</head>
+<body>
+    <h1>about.html sayfası</h1>
+</body>
+</html>
+
+-->
+
+<!-- ikisinde de tamamen aynı içerik var sadece body kısmında h1 etiketleri değişti
+    amele gibi böyle yapmaktansa aynı iskeleti bir yerden alsam sadece değiştirilen kısımları
+    index.html about.html içine yazsam layout kullanmış olsam müq olmaz mı olur
+-->
+
+
+{% extends 'layout.html' %} 
+<!-- bana layout.html deki bütün içeriği getir ancak ben layout ta tanımlamış olduğum
+    block content in içine sadece değiştirilebilir alanları eklicem demiş oluyorsun-->
+
+{% block content %}
+
+    <h1> about.html </h1>
+    
+{% endblock %}
